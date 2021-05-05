@@ -1,6 +1,7 @@
 import './App.css';
 import logo from './logo.svg';
 import Coin from './components/Coin';
+import AccountBalance from './components/AccountBalance'
 
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
         <img className="App-logo" src={logo} alt="React Logo" />
         <h1>8bit Dex</h1>
       </header>
+      <AccountBalance amount={10000} />
+      <section>
       <table>
         <thead>
           <tr>
@@ -25,6 +28,7 @@ function App() {
           
         </tbody>
       </table>
+      </section>
     </div>
   );
 }

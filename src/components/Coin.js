@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import './coin.css';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
+const CoinRow = styled.tr`
+background:#eee;
+`;
 
 export default class Coin extends Component {
     constructor(props) {
@@ -27,12 +30,12 @@ export default class Coin extends Component {
 
     render() {
         return (
-            <tr className="coin-row">
+            <CoinRow>
                 <td>{this.state.name}</td>
                 <td>{this.state.ticker}</td>
                 <td>${this.state.price}</td>
                 <td><button onClick={this.handleClick}>Refresh</button></td>
-            </tr>
+                </CoinRow>
         )
     }
 }
