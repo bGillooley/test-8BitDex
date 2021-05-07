@@ -19,11 +19,13 @@ export default class Coin extends Component {
     }
 
     render() {
+
         return (
             <CoinRow>
                 <td>{this.props.name}</td>
                 <td>{this.props.ticker}</td>
                 <td>€{this.props.price}</td>
+                {this.props.showBalance && <td>${this.props.balance}</td>}
                 <td><button onClick={this.handleClick}>Refresh</button></td>
                 </CoinRow>
         )

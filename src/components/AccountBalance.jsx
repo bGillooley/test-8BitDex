@@ -8,10 +8,25 @@ padding:2rem;
 `;
 
 export default class AccountBalance extends Component {
+
+constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+}
+
+
+handleClick(event) {
+    event.preventDefault();
+    this.props.handleBalance();
+}
+
     render() {
+        const buttonText = this.props.showBalance ? 'Hide Balance' : 'Show Balance';
+        const showingBalance = this.props.showBalance ? 'Balance: '+this.props.amount : ''
         return (
             <Section>
-            Balance: ${this.props.amount}
+            <div>{showingBalance}</div>
+            <button onClick={this.handleClick}>{buttonText}</button>
             </Section>
         )
     }

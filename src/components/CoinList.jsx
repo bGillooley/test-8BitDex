@@ -11,6 +11,8 @@ export default class CoinList extends Component {
                   <th>Name</th>
                   <th>Ticker</th>
                   <th>Price</th>
+                  {this.props.showBalance && <th>Balance</th>}
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -21,6 +23,8 @@ export default class CoinList extends Component {
                         handleRefresh={this.props.handleRefresh} 
                         name={value.name} 
                         ticker={value.ticker} 
+                        balance={value.balance}  
+                        showBalance={this.props.showBalance}
                         price={value.price}>
                     </Coin>)
                 }
