@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/eightbit-dex/static/css/main.b5bbb4d3.chunk.css",
+    "main.js": "/eightbit-dex/static/js/main.21250bc9.chunk.js",
+    "main.js.map": "/eightbit-dex/static/js/main.21250bc9.chunk.js.map",
+    "runtime-main.js": "/eightbit-dex/static/js/runtime-main.f8c80db4.js",
+    "runtime-main.js.map": "/eightbit-dex/static/js/runtime-main.f8c80db4.js.map",
+    "static/js/2.79b0b22c.chunk.js": "/eightbit-dex/static/js/2.79b0b22c.chunk.js",
+    "static/js/2.79b0b22c.chunk.js.map": "/eightbit-dex/static/js/2.79b0b22c.chunk.js.map",
+    "static/js/3.6ad90f27.chunk.js": "/eightbit-dex/static/js/3.6ad90f27.chunk.js",
+    "static/js/3.6ad90f27.chunk.js.map": "/eightbit-dex/static/js/3.6ad90f27.chunk.js.map",
+    "index.html": "/eightbit-dex/index.html",
+    "static/css/main.b5bbb4d3.chunk.css.map": "/eightbit-dex/static/css/main.b5bbb4d3.chunk.css.map",
+    "static/js/2.79b0b22c.chunk.js.LICENSE.txt": "/eightbit-dex/static/js/2.79b0b22c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8c80db4.js",
+    "static/js/2.79b0b22c.chunk.js",
+    "static/css/main.b5bbb4d3.chunk.css",
+    "static/js/main.21250bc9.chunk.js"
+  ]
+}
