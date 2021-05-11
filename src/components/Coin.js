@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -6,30 +6,22 @@ const CoinRow = styled.tr`
 background:#eee;
 `;
 
-export default class Coin extends Component {
-    constructor(props) {
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
+export default function Coin(props)  {
 
-
-    handleClick = (event) => {
+   const handleClick = (event) => {
         event.preventDefault();
-        this.props.handleRefresh(this.props.ticker);
+        props.handleRefresh(props.id);
     }
-
-    render() {
-
         return (
             <CoinRow>
-                <td>{this.props.name}</td>
-                <td>{this.props.ticker}</td>
-                <td>€{this.props.price}</td>
-                {this.props.showBalance && <td>${this.props.balance}</td>}
-                <td><button onClick={this.handleClick}>Refresh</button></td>
+                <td>1</td>
+                <td>{props.name}</td>
+                <td>{props.ticker}</td>
+                <td>€{props.price}</td>
+                {props.showBalance && <td>${props.balance}</td>}
+                <td><button onClick={handleClick}>Refresh</button></td>
                 </CoinRow>
         )
-    }
 }
 
 Coin.propTypes = {
